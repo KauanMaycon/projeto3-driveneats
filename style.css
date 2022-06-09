@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #E5E5E5;
+}
+
+.righteous{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+}
+
+img{
+    width: 100%;
+}
+
+/*Start container*/
+.container{
+    width: 414px;
+    position: relative;
+    overflow: hidden;
+}
+/*End container*/
+
+/*Start top*/
+.top{
+    width: 414px;
+    background-image: url(./img/Rectangle1.png);
+    height: 92px;
+    position: fixed;
+    top:0;
+    left: 0;
+    box-shadow: 2px 5px 3px rgba(15, 14, 14, 0.22) ;
+}
+.top div{
+    padding-top:8px;
+    padding-left: 21px;
+    width: 100%;
+}
+.top h1{
+    width: 248px;
+    height: 44px;
+    font-size: 44px;
+    color:#FFFFFF;
+}
+.top p{
+    Width:226px;
+    height: 17px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;  
+}
+/*End top*/
+
+/*Start titleCategory*/
+.titleCategory h1{
+    /* width: 250px;
+     height: 25px;*/
+     font-size: 26px;
+     margin: 21px;
+     color: #333333;
+ }
+.titleCategory:first-child h1{
+    width: 100vw;
+    height: 25px;
+    font-size: 26px;
+    margin-top:120px;
+    color: #333333;
+}
+/*End titleCategory*/
+
+/*Start content and content A,B and C*/
+/*
+.content{
+    margin-left: 21px;
+}
+*/
+.contentA .contentB .contentC{
+    width: 414px;
+    overflow: hidden;
+}
+/*End content and content A,B and C*/
+
+/*Start boxes*/
+.boxes{
+    display: flex;
+    padding-right: 21px;
+}
+.box{
+    width: 172px;
+    height: 216px;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    margin-left: 21px;
+    box-shadow: 0 0 7px rgb(0, 0, 0, 0.1);
+}
+.image{
+    width: 144px;
+    height: 87px;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+.meal{
+    width: 139px;
+    height: 23px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+    margin-left: 14px;
+}
+.description{
+    width: 147px;
+    height: 39px;
+    font-weight: 300;
+    font-size: 15px;
+    color: #A6A6A6;
+    margin-left: 14px;
+    display: inline-flex;
+    align-items: center; 
+}
+.price{
+    width: 66px;
+    height: 19px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    margin-left: 14px;
+    margin-top: 5px;
+}
+/*End boxes*/
+
+/*Start boxes A*/
+.boxesA{
+    overflow-x: scroll;
+}
+.imageA1{
+    background-image: url(./img/frango_yin_yang1.png);
+}
+.imageA2{
+    background-image: url(./img/carne_bovina.jpg);
+    background-size: cover;
+}
+.imageA3{
+    background-image: url(./img/carne_suina.jpg);
+    background-size: cover;
+}
+/*End boxes A*/
+
+/*Start boxes B*/
+.boxesB{
+    overflow-x: scroll;
+}
+.imageB1{
+    background-image: url(./img/coquinha_gelada1.png);  
+}
+.imageB2{
+    background-image: url(./img/suco.jpg);
+    background-size: cover;
+    border: 1px solid rgb(0, 0, 0, 0.08);
+}
+.imageB3{
+    background-image: url(./img/delVale.jpeg);
+    background-size: cover;
+    border: 1px solid rgb(0, 0, 0, 0.08);
+}
+/*End boxes B*/
+
+/*Start boxes C*/
+.boxesC {
+    overflow-x: scroll;
+}
+.content,.boxesC{
+    margin-bottom: 115px;
+}
+.imageC1{
+    background-image: url(./img/pudim1.png);
+    background-size: cover;
+}
+.imageC2{
+    background-image: url(./img/sorvete.jpg);
+    background-size: cover;
+}
+.imageC3{
+    background-image: url(./img/bolo.jpg);
+    background-size: cover;
+}
+/*End boxes C*/
+
+/*Start finishing*/
+.finishing{
+    width: 414px;
+    height: 92px;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    box-shadow: 0 0 7px rgb(0, 0, 0, 0.1);
+}
+.finishing div{
+    width: 100%;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+.finishing div > button{
+    justify-content: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 80%;
+    height: 53px;
+    border-radius: 30px;
+    background-color:#CBCBCB;
+    border:none;
+}
+/*End finishing*/
+
+
+
