@@ -22,8 +22,8 @@ img{
 /*Start container*/
 .container{
     width: 414px;
-    position: relative;
     overflow: hidden;
+    /*position:relative;*/
 }
 /*End container*/
 
@@ -36,6 +36,7 @@ img{
     top:0;
     left: 0;
     box-shadow: 2px 5px 3px rgba(15, 14, 14, 0.22) ;
+    z-index: 5;
 }
 .top div{
     padding-top:8px;
@@ -98,6 +99,7 @@ img{
     border-radius: 9px;
     margin-left: 21px;
     box-shadow: 0 0 7px rgb(0, 0, 0, 0.1);
+    position: relative;
 }
 .image{
     width: 144px;
@@ -133,6 +135,8 @@ img{
     color: #000000;
     margin-left: 14px;
     margin-top: 5px;
+    display: inline-flex;
+    align-items: center;
 }
 /*End boxes*/
 
@@ -222,6 +226,21 @@ img{
     border:none;
 }
 /*End finishing*/
+
+/*Start JavaScript part*/
+
+.ball {
+    width: 16px;
+    height: 16px;
+    background-image: url(./img/Vector.png);
+    background-size: cover;
+    position: absolute;
+    left: 135px;
+    bottom: 12px;  
+    display: none;
+}
+
+
 
 
 
