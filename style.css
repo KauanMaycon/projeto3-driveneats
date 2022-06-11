@@ -100,6 +100,7 @@ img{
     margin-left: 21px;
     box-shadow: 0 0 7px rgb(0, 0, 0, 0.1);
     position: relative;
+    border: 5px solid white;
 }
 .image{
     width: 144px;
@@ -236,7 +237,7 @@ img{
     background-size: cover;
     position: absolute;
     left: 135px;
-    bottom: 7px;  
+    bottom: 8px;  
     display: none;
     
 }
@@ -247,6 +248,7 @@ img{
     font-size: 20px;
     cursor: pointer;
 }
+
 
 
 

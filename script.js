@@ -3,6 +3,9 @@
 let dish;
 let drink;
 let dessert;
+let priceDish;
+let priceDrink;
+let priceDessert;
 
 /*Start selectDish */
 function selectChicken(){
@@ -12,7 +15,8 @@ function selectChicken(){
     let bMeat = document.querySelector(".meat .ball").style = "none";
     let swine = document.querySelector(".swine").style = "none";  
     let bSwine = document.querySelector(".swine .ball").style = "none";  
-    dish = "Chicken";
+    dish = "Frango Yin Yang";
+    priceDish = 14.90;
     finish();
 }
 
@@ -23,7 +27,8 @@ function selectMeat(){
     let bChicken = document.querySelector(".chicken .ball").style = "none";
     let swine = document.querySelector(".swine").style = "none";
     let bSwine = document.querySelector(".swine .ball").style = "none";  
-    dish = "Meat";
+    dish = "Carne Bovina";
+    priceDish = 19.90;
     finish();
 }
 
@@ -34,7 +39,8 @@ function selectSwine(){
     let bChicken = document.querySelector(".chicken .ball").style = "none";
     let meat = document.querySelector(".meat").style= "none";
     let bMeat = document.querySelector(".meat .ball").style = "none";
-    dish = "Swine";
+    dish = "Tonkatsu";
+    priceDish= 23.90;
     finish();
 }
 /*End selectDish */
@@ -47,7 +53,8 @@ function selectCoke(){
     let bJuice = document.querySelector(".juice .ball").style = "none";
     let juiceBottle = document.querySelector(".juiceBottle").style = "none";
     let bJuiceBottle = document.querySelector(".juiceBottle .ball").style = "none";
-    drink = "Coke";
+    drink = "Coquinha gelada";
+    priceDrink  = 4.90;
     finish();
 }
 
@@ -58,7 +65,8 @@ function selectJuice(){
     let bCoke = document.querySelector(".coke .ball").style = "none";
     let juiceBottle = document.querySelector(".juiceBottle").style = "none";
     let bJuiceBottle = document.querySelector(".juiceBottle .ball").style = "none";
-    drink = "Juice";
+    drink = "Suco natural";
+    priceDrink  = 12;
     finish();
 }
 
@@ -69,7 +77,8 @@ function selectJuiceBottle(){
     let bCoke = document.querySelector(".coke .ball").style = "none";
     let juice = document.querySelector(".juice").style = "none";
     let bJuice = document.querySelector(".juice .ball").style = "none"; 
-    drink = "JuiceBottle"
+    drink = "Suco em garrafa"
+    priceDrink = 21.90;
     finish();
 }
 /*End selectDrink */
@@ -82,7 +91,8 @@ function selectPudding(){
     let bIceCream = document.querySelector(".iceCream .ball").style = "none";
     let cake = document.querySelector(".cake").style = "none";
     let bCake = document.querySelector(".cake .ball").style = "none";
-    dessert = "Pudding";
+    dessert = "Pudim";
+    priceDessert = 7.90;
     finish();
 }
 
@@ -93,7 +103,8 @@ function selectIceCream(){
     let bPudding = document.querySelector(".pudding .ball").style = "none";
     let cake = document.querySelector(".cake").style = "none";
     let bCake = document.querySelector(".cake .ball").style = "none";
-    dessert = "IceCream";
+    dessert = "Sorvete";
+    priceDessert = 6.90;
     finish();
 }
 
@@ -104,7 +115,8 @@ function selectCake(){
     let bPudding = document.querySelector(".pudding .ball").style = "none";
     let iceCream = document.querySelector(".iceCream").style = "none";
     let bIceCream = document.querySelector(".iceCream .ball").style = "none";
-    dessert = "Cake";
+    dessert = "Bolo";
+    priceDessert = 4;
     finish();
 }
 /*End selectDessert*/
@@ -121,7 +133,21 @@ function finish(){
 /*End buttonFinish */
 
 
+/*Start directOrder */
+function directOrder(){
+   // let point = document.querySelector(".point");
+    let request = 
+    `  Olá, gostaria de fazer o pedido:
+    -Prato: ${dish}
+    -Bebida: ${drink}
+    -Sobremessa: ${dessert}
+     Total: R$${(priceDish + priceDrink + priceDessert).toFixed(2).replace(".",",")}`;
+     let whatsApp = (`https://wa.me/+553597085435?text= ${encodeURIComponent(request)}`);
+     window.open(whatsApp);
+    
 
+    //point.innerHTML= watsApp;
+}
 
 
   
