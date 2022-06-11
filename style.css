@@ -214,7 +214,7 @@ img{
     justify-content: center;
     background-color: #FFFFFF;
 }
-.finishing div > button{
+.finishing div button{
     justify-content: center;
     font-weight: 400;
     font-size: 20px;
@@ -229,16 +229,33 @@ img{
 
 /*Start JavaScript part*/
 
-.ball {
+.ball{
     width: 16px;
     height: 16px;
     background-image: url(./img/Vector.png);
     background-size: cover;
     position: absolute;
     left: 135px;
-    bottom: 12px;  
+    bottom: 7px;  
     display: none;
+    
 }
+
+.finishing div .buttonColor{
+    background-color: #32B72F;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+.border{
+    border:4px solid #32b72f;
+}
+
+
 
 
 
