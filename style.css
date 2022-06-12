@@ -110,7 +110,7 @@ img{
     margin-bottom: 10px;
     border-radius: 12px;
 }
-.meal{
+.mealA,.mealB,.mealC{
     width: 139px;
     height: 23px;
     font-weight: 700;
@@ -128,7 +128,7 @@ img{
     display: inline-flex;
     align-items: center; 
 }
-.price{
+.priceA,.priceB,.priceC{
     width: 66px;
     height: 19px;
     font-weight: 400;
@@ -230,7 +230,7 @@ img{
 
 /*Start JavaScript part*/
 
-.ball{
+.ballSelect{
     width: 16px;
     height: 16px;
     background-image: url(./img/Vector.png);
@@ -238,8 +238,10 @@ img{
     position: absolute;
     left: 135px;
     bottom: 8px;  
-    display: none;
-    
+}
+
+.border{
+    border:5px solid #32b72f;
 }
 
 .finishing div .buttonColor{
@@ -251,11 +253,6 @@ img{
 
 
 
-
-
-.border{
-    border:4px solid #32b72f;
-}
 
 
 

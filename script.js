@@ -1,129 +1,144 @@
 
-/*Values that will be saved after executing the function select*/
-let dish;
-let drink;
-let dessert;
-let priceDish;
-let priceDrink;
-let priceDessert;
+let mealA;
+let mealB;
+let mealC;
+let priceA;
+let priceB;
+let priceC;
 
 /*Start selectDish */
-function selectChicken(){
-    let chicken = document.querySelector(".chicken").style.border = "5px solid #32b72f"; 
-    let ball = document.querySelector(".chicken .ball").style.display = "inherit";
-    let meat = document.querySelector(".meat").style= "none";
-    let bMeat = document.querySelector(".meat .ball").style = "none";
-    let swine = document.querySelector(".swine").style = "none";  
-    let bSwine = document.querySelector(".swine .ball").style = "none";  
-    dish = "Frango Yin Yang";
-    priceDish = 14.90;
+function selectDish(dish){
+    let border = document.querySelector('.boxesA .border');
+    if(border !== null){
+        removeBallA(); 
+        border.classList.remove('border');  
+    }
+    dish.classList.add('border');
+    addBallA();
+    priceDish();
+    mealDish();
     finish();
 }
 
-function selectMeat(){
-    let meat = document.querySelector(".meat").style.border = "5px solid #32b72f";
-    let ball = document.querySelector(".meat .ball").style.display = "inherit";
-    let chicken = document.querySelector(".chicken").style = "none";
-    let bChicken = document.querySelector(".chicken .ball").style = "none";
-    let swine = document.querySelector(".swine").style = "none";
-    let bSwine = document.querySelector(".swine .ball").style = "none";  
-    dish = "Carne Bovina";
-    priceDish = 19.90;
-    finish();
+function mealDish(){
+    mealA = document.querySelector('.border .mealA');
+    mealA = mealA.innerText;
+    //console.log(mealA);
 }
 
-function selectSwine(){
-    let swine = document.querySelector(".swine").style.border = "5px solid #32b72f";
-    let ball = document.querySelector(".swine .ball").style.display = "inherit";
-    let chicken = document.querySelector(".chicken").style = "none";
-    let bChicken = document.querySelector(".chicken .ball").style = "none";
-    let meat = document.querySelector(".meat").style= "none";
-    let bMeat = document.querySelector(".meat .ball").style = "none";
-    dish = "Tonkatsu";
-    priceDish= 23.90;
-    finish();
+function priceDish(){
+    priceA = document.querySelector('.border .priceA');
+    priceA = priceA.innerHTML;
+    priceA = (priceA).replace("R$","");
+    priceA = (priceA).replace(",",".");
+    priceA = parseFloat(priceA);
+    //console.log(priceA);
 }
-/*End selectDish */
+
+function addBallA(){
+    let ballA = document.querySelector('.boxesA .border .ball')
+    ballA.classList.add('ballSelect');
+}
+
+function removeBallA(){
+    let ballA = document.querySelector('.boxesA .border .ball')
+    if(ballA !== null){
+     ballA.classList.remove('ballSelect');
+    }
+}
+
+/*End selectDish*/
 
 /*Start selectDrink */
-function selectCoke(){
-    let coke = document.querySelector(".coke").style.border = "5px solid #32b72f";
-    let ball = document.querySelector(".coke .ball").style.display = "inherit";
-    let juice = document.querySelector(".juice").style = "none";
-    let bJuice = document.querySelector(".juice .ball").style = "none";
-    let juiceBottle = document.querySelector(".juiceBottle").style = "none";
-    let bJuiceBottle = document.querySelector(".juiceBottle .ball").style = "none";
-    drink = "Coquinha gelada";
-    priceDrink  = 4.90;
+function selectDrink(drink){
+    const border = document.querySelector('.boxesB .border');
+    if(border !== null){
+        removeBallB();
+        border.classList.remove('border');
+    }
+    drink.classList.add('border'); 
+    addBallB();
+    priceDrink();
+    mealDrink();
     finish();
 }
 
-function selectJuice(){
-    let juice = document.querySelector(".juice").style.border = "5px solid #32b72f";
-    let ball = document.querySelector(".juice .ball").style.display = "inherit";
-    let coke = document.querySelector(".coke").style = "none";
-    let bCoke = document.querySelector(".coke .ball").style = "none";
-    let juiceBottle = document.querySelector(".juiceBottle").style = "none";
-    let bJuiceBottle = document.querySelector(".juiceBottle .ball").style = "none";
-    drink = "Suco natural";
-    priceDrink  = 12;
-    finish();
+function mealDrink(){
+    mealB = document.querySelector('.border .mealB');
+    mealB = mealB.innerText;
+    //console.log(mealB);
 }
 
-function selectJuiceBottle(){
-    let juiceBottle = document.querySelector(".juiceBottle").style.border = "5px solid #32b72f";
-    let ball = document.querySelector(".juiceBottle .ball").style.display = "inherit";
-    let coke = document.querySelector(".coke").style = "none";
-    let bCoke = document.querySelector(".coke .ball").style = "none";
-    let juice = document.querySelector(".juice").style = "none";
-    let bJuice = document.querySelector(".juice .ball").style = "none"; 
-    drink = "Suco em garrafa"
-    priceDrink = 21.90;
-    finish();
+function priceDrink(){
+    priceB = document.querySelector('.border .priceB');
+    priceB = priceB.innerHTML;
+    priceB = priceB.replace("R$","");
+    priceB = priceB.replace(",",".");
+    priceB = parseFloat(priceB);
+    //console.log(priceB);
 }
+
+function addBallB(){
+    let ballB = document.querySelector('.boxesB .border .ball');
+    ballB.classList.add('ballSelect');
+}
+
+function removeBallB(){
+    let ballB = document.querySelector('.boxesB .border .ball');
+    if (ballB !== null){
+        ballB.classList.remove('ballSelect');
+    }
+}
+
 /*End selectDrink */
 
-/*Start  selectDessert*/
-function selectPudding(){
-    let pudding = document.querySelector(".pudding").style.border = "5px solid #32b72f";
-    let ball = document.querySelector(".pudding .ball").style.display = "inherit";
-    let iceCream = document.querySelector(".iceCream").style = "none";
-    let bIceCream = document.querySelector(".iceCream .ball").style = "none";
-    let cake = document.querySelector(".cake").style = "none";
-    let bCake = document.querySelector(".cake .ball").style = "none";
-    dessert = "Pudim";
-    priceDessert = 7.90;
+/*Start selectDessert */
+function selectDessert(dessert){
+    const border = document.querySelector('.boxesC .border');
+    if(border !== null){
+        removeBallC();
+        border.classList.remove('border');
+    }
+    dessert.classList.add('border');
+    addBallC();
+    priceDessert();
+    mealDessert();
     finish();
 }
 
-function selectIceCream(){
-    let iceCream = document.querySelector(".iceCream").style.border = "5px solid #32b72f";
-    let ball = document.querySelector(".iceCream .ball").style.display = "inherit";
-    let pudding = document.querySelector(".pudding").style = "none";
-    let bPudding = document.querySelector(".pudding .ball").style = "none";
-    let cake = document.querySelector(".cake").style = "none";
-    let bCake = document.querySelector(".cake .ball").style = "none";
-    dessert = "Sorvete";
-    priceDessert = 6.90;
-    finish();
+function mealDessert(){
+    mealC = document.querySelector('.border .mealC');
+    mealC = mealC.innerText;
+    //console.log(mealC);
 }
 
-function selectCake(){
-    let cake = document.querySelector(".cake").style.border = "5px solid #32b72f";
-    let ball = document.querySelector(".cake .ball").style.display = "inherit";
-    let pudding = document.querySelector(".pudding").style = "none";
-    let bPudding = document.querySelector(".pudding .ball").style = "none";
-    let iceCream = document.querySelector(".iceCream").style = "none";
-    let bIceCream = document.querySelector(".iceCream .ball").style = "none";
-    dessert = "Bolo";
-    priceDessert = 4;
-    finish();
+function priceDessert(){
+    priceC = document.querySelector('.border .priceC');
+    priceC = priceC.innerHTML;
+    priceC = priceC.replace("R$","");
+    priceC = priceC.replace(",",".");
+    priceC = parseFloat(priceC);
+    //console.log(priceC);
 }
-/*End selectDessert*/
+
+function addBallC(){
+    let ballC = document.querySelector('.boxesC .border .ball');
+    ballC.classList.add('ballSelect');
+}
+
+function removeBallC(){
+    let ballC = document.querySelector('.boxesC .border .ball');
+    if(ballC !== null){
+        ballC.classList.remove('ballSelect');
+    }
+}
+
+
+/*End selectDessert */
 
 /*Start buttonFinish */
 function finish(){
-    if(dish && drink && dessert){
+    if(mealA && mealB && mealC){
         let buttonColor = document.querySelector(".buttonColor");
         let finishing = document.querySelector(".finishing div button");
         finishing.innerHTML = "Fechar pedido";
@@ -132,22 +147,42 @@ function finish(){
 }
 /*End buttonFinish */
 
-
 /*Start directOrder */
 function directOrder(){
-   // let point = document.querySelector(".point");
-    let request = 
-    `  Olá, gostaria de fazer o pedido:
-    -Prato: ${dish}
-    -Bebida: ${drink}
-    -Sobremessa: ${dessert}
-     Total: R$${(priceDish + priceDrink + priceDessert).toFixed(2).replace(".",",")}`;
-     let whatsApp = (`https://wa.me/+553597085435?text= ${encodeURIComponent(request)}`);
-     window.open(whatsApp);
-    
+    // let point = document.querySelector(".point");
+     let request =
+     `Olá, gostaria de fazer o pedido:
+     -Prato:${mealA}
+     -Bebida:${mealB}
+     -Sobremessa:${mealC}
+      Total:R$${(priceA + priceB + priceC).toFixed(2).replace(".",",")}`;
+      let whatsApp = (`https://wa.me/+553597085435?text= ${encodeURIComponent(request)}`);
+      window.open(whatsApp);   
+ }
 
-    //point.innerHTML= watsApp;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   
