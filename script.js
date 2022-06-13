@@ -132,8 +132,6 @@ function removeBallC(){
         ballC.classList.remove('ballSelect');
     }
 }
-
-
 /*End selectDessert */
 
 /*Start buttonFinish */
@@ -149,7 +147,7 @@ function finish(){
 
 /*Start directOrder */
 function directOrder(){
-    // let point = document.querySelector(".point");
+    if(mealA && mealB && mealC){
      let request =
      `Olá, gostaria de fazer o pedido:
      -Prato:${mealA}
@@ -158,7 +156,11 @@ function directOrder(){
       Total:R$${(priceA + priceB + priceC).toFixed(2).replace(".",",")}`;
       let whatsApp = (`https://wa.me/+553597085435?text= ${encodeURIComponent(request)}`);
       window.open(whatsApp);   
+    }
  }
+
+/*Finish directOrder */
+
 
 
 

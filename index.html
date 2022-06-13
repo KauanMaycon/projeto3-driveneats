@@ -9,240 +9,242 @@
     <title>Driven Eats</title>
 </head>
 <body>
-    <!--Start container-->
-    <div class="container">
-        <!--Start top-->
-        <div class="top">
-            <div>
-                <h1 class="righteous">DrivenEats</h1>
-                <p>Sua comida em 6 minutos</p>
-            </div>  
+    <div class="containerGeneral">
+        <!--Start container-->
+        <div class="container">
+            <!--Start top-->
+            <div class="top">
+                <div>
+                    <h1 class="righteous">DrivenEats</h1>
+                    <p>Sua comida em 6 minutos</p>
+                </div>  
+            </div>
+            <!--End top-->
+
+            <!--Start content-->
+            <div class="content">
+                <!--Start titleCategory A-->
+                <div class="titleCategory righteous">
+                    <h1>Primeiro, seu prato</h1>
+                </div>
+                <!--End titleCategory A-->
+
+                <!--Start contentA-->
+                <div class="contentA">
+                    <!--Start boxes A-->
+                    <div class="boxes boxesA">
+                        <!--Start box chicken-->
+                        <div class="box chicken" onclick="selectDish(this)" >
+                            <div class="image imageA1">
+                                <!--Content in css-->
+                            </div>
+                            <div class="mealA">
+                                Frango Yin Yang
+                            </div>
+                            <div class="description">
+                                <p>Um pouco de batata, um pouco de salada</p>
+                            </div>
+                            <div class="priceA">
+                                R$ 14,90
+                            </div>
+                            <div class="ball"></div>
+                        </div>
+                        <!--End box chicken-->
+
+                        <!--Start box meat-->
+                        <div class="box meat" onclick="selectDish(this)">
+                            <div class="image imageA2">
+                                <!--Content in css-->
+                            </div>
+                            <div class="mealA">
+                                Carne Bovina
+                            </div>
+                            <div class="description">
+                                <p>Um pouco de batata, farofa e carne bovina</p>
+                            </div>
+                            <div class="priceA">
+                                R$ 19,90
+                            </div>
+                            <div class="ball"></div>
+                        </div>
+                        <!--End box meat-->
+
+                        <!--Start box swine-->
+                        <div class="box swine" onclick="selectDish(this)">
+                            <div class="image imageA3">
+                                <!--Content in css-->
+                            </div>
+                            <div class="mealA">
+                                Tonkatsu 
+                            </div>
+                            <div class="description">
+                                <p>Um pouco de salada e costela suína frita</p>
+                            </div>
+                            <div class="priceA">
+                                R$ 23,90
+                            </div>
+                            <div class="ball"></div>
+                        </div>
+                        <!--End box swine-->
+                    </div>
+                    <!--End boxes A-->
+                </div>
+                <!--End contentA-->
+
+                <!--Start titleCategory B -->
+                <div class="titleCategory righteous">
+                    <h1>Agora, sua bebida</h1>
+                </div>
+                <!--End titleCategory B -->
+
+                <!--Start contentB-->
+                <div class="contentB">
+                    <!--Start boxes B-->
+                    <div class="boxes boxesB">
+                        <!--Start box coke-->
+                        <div class="box coke" onclick="selectDrink(this)">
+                            <div class="image imageB1">
+                                <!--Content in css-->
+                            </div>
+                            <div class="mealB">
+                                Coquinha gelada
+                            </div>
+                            <div class="description">
+                                <p>Lata 350ml</p>
+                            </div>
+                            <div class="priceB">
+                                R$ 4,90
+                            </div>
+                            <div class="ball"></div>
+                        </div>
+                        <!--End box coke-->
+
+                        <!--Start box juice-->
+                        <div class="box juice" onclick="selectDrink(this)">
+                            <div class="image imageB2">
+                                <!--Content in css-->
+                            </div>
+                            <div class="mealB">
+                                Suco natural
+                            </div>
+                            <div class="description">
+                                <p>Copo de 500ml</p>
+                            </div>
+                            <div class="priceB">
+                                R$ 12,00
+                            </div>
+                            <div class="ball"></div>
+                        </div>
+                    
+                        <!--End box juice-->
+
+                        <!--Start box juiceBottle-->
+                        <div class="box juiceBottle" onclick="selectDrink(this)">
+                            <div class="image imageB3">
+                                <!--Content in css-->
+                            </div>
+                            <div class="mealB">
+                                Suco em garrafa
+                            </div>
+                            <div class="description">
+                                <p>Garrafa 1L</p>
+                            </div>
+                            <div class="priceB">
+                                R$ 21,90
+                            </div>
+                            <div class="ball"></div>
+                        </div>
+                        <!--End box juiceBottle-->
+                    </div>
+                    <!--End boxes B-->
+                </div>
+                <!--End contentB-->
+
+                <!--Start titleCategory C-->
+                <div class="titleCategory righteous">
+                    <h1>Por fim, sua sobremesa</h1>
+                </div>
+                <!--End titleCategory C-->
+
+                <!--Start contentC-->
+                    <div class="contentC">
+                    <!--Start boxes C-->
+                    <div class="boxes boxesC">
+                        <!--Start box pudding-->
+                        <div class="box pudding" onclick="selectDessert(this)">
+                            <div class="image imageC1">
+                                <!--Content in css-->
+                            </div>
+                            <div class="mealC">
+                                Pudim
+                            </div>
+                            <div class="description">
+                                <p>Apenas pudim</p>
+                            </div>
+                            <div class="priceC">
+                                R$ 7,90
+                            </div>
+                            <div class="ball"></div>
+                        </div>
+                        <!--End box pudding-->
+
+                        <!--Start box iceCream-->
+                        <div class="box iceCream" onclick="selectDessert(this)">
+                            <div class="image imageC2">
+                                <!--Content in css-->
+                            </div>
+                            <div class="mealC">
+                                Sorvete
+                            </div>
+                            <div class="description">
+                                <p>A cada 100g</p>
+                            </div>
+                            <div class="priceC">
+                                R$ 6,90
+                            </div>
+                            <div class="ball"></div>
+                        </div>
+                        <!--End box iceCream-->
+
+                        <!--Start box cake-->
+                        <div class="box cake" onclick="selectDessert(this)">
+                            <div class="image imageC3">
+                                <!--Content in css-->
+                            </div>
+                            <div class="mealC">
+                                Bolo
+                            </div>
+                            <div class="description">
+                                <p>Apenas uma fatia</p>
+                            </div>
+                            <div class="priceC">
+                                R$ 4,00
+                            </div>
+                            <div class="ball"></div>
+                        </div>
+                        <!--End box cake-->
+                    </div>
+                    <!--End boxes C-->
+                    </div>
+                <!--Start contentC-->
+
+            </div> 
+            <!--End content-->
+
+            <!--Start finishing-->
+            <div class="finishing" >
+                <div>
+                    <button onclick="directOrder()">
+                    Selecione os 3 itens <br>
+                    para fechar o pedido
+                    </button>
+                </div>
+            </div>
+            <!--End finishing-->
+
         </div>
-        <!--End top-->
-
-        <!--Start content-->
-        <div class="content">
-            <!--Start titleCategory A-->
-            <div class="titleCategory righteous">
-                <h1>Primeiro, seu prato</h1>
-            </div>
-            <!--End titleCategory A-->
-
-             <!--Start contentA-->
-            <div class="contentA">
-                <!--Start boxes A-->
-                <div class="boxes boxesA">
-                    <!--Start box chicken-->
-                    <div class="box chicken" onclick="selectDish(this)" >
-                        <div class="image imageA1">
-                            <!--Content in css-->
-                        </div>
-                        <div class="mealA">
-                            Frango Yin Yang
-                        </div>
-                        <div class="description">
-                            <p>Um pouco de batata, um pouco de salada</p>
-                        </div>
-                        <div class="priceA">
-                            R$ 14,90
-                        </div>
-                        <div class="ball"></div>
-                    </div>
-                    <!--End box chicken-->
-
-                    <!--Start box meat-->
-                    <div class="box meat" onclick="selectDish(this)">
-                        <div class="image imageA2">
-                            <!--Content in css-->
-                        </div>
-                        <div class="mealA">
-                            Carne Bovina
-                        </div>
-                        <div class="description">
-                            <p>Um pouco de batata, farofa e carne bovina</p>
-                        </div>
-                        <div class="priceA">
-                            R$ 19,90
-                        </div>
-                        <div class="ball"></div>
-                    </div>
-                    <!--End box meat-->
-
-                    <!--Start box swine-->
-                    <div class="box swine" onclick="selectDish(this)">
-                        <div class="image imageA3">
-                            <!--Content in css-->
-                        </div>
-                        <div class="mealA">
-                            Tonkatsu 
-                        </div>
-                        <div class="description">
-                            <p>Um pouco de salada e costela suína frita</p>
-                        </div>
-                        <div class="priceA">
-                            R$ 23,90
-                        </div>
-                        <div class="ball"></div>
-                    </div>
-                    <!--End box swine-->
-                </div>
-                <!--End boxes A-->
-            </div>
-            <!--End contentA-->
-
-            <!--Start titleCategory B -->
-            <div class="titleCategory righteous">
-                <h1>Agora, sua bebida</h1>
-            </div>
-            <!--End titleCategory B -->
-
-             <!--Start contentB-->
-            <div class="contentB">
-                <!--Start boxes B-->
-                <div class="boxes boxesB">
-                    <!--Start box coke-->
-                    <div class="box coke" onclick="selectDrink(this)">
-                        <div class="image imageB1">
-                            <!--Content in css-->
-                        </div>
-                        <div class="mealB">
-                            Coquinha gelada
-                        </div>
-                        <div class="description">
-                            <p>Lata 350ml</p>
-                        </div>
-                        <div class="priceB">
-                            R$ 4,90
-                        </div>
-                        <div class="ball"></div>
-                    </div>
-                    <!--End box coke-->
-
-                    <!--Start box juice-->
-                    <div class="box juice" onclick="selectDrink(this)">
-                        <div class="image imageB2">
-                            <!--Content in css-->
-                        </div>
-                        <div class="mealB">
-                            Suco natural
-                        </div>
-                        <div class="description">
-                            <p>Copo de 500ml</p>
-                        </div>
-                        <div class="priceB">
-                            R$ 12,00
-                        </div>
-                        <div class="ball"></div>
-                    </div>
-                 
-                    <!--End box juice-->
-
-                    <!--Start box juiceBottle-->
-                    <div class="box juiceBottle" onclick="selectDrink(this)">
-                        <div class="image imageB3">
-                            <!--Content in css-->
-                        </div>
-                        <div class="mealB">
-                            Suco em garrafa
-                        </div>
-                        <div class="description">
-                            <p>Garrafa 1L</p>
-                        </div>
-                        <div class="priceB">
-                            R$ 21,90
-                        </div>
-                        <div class="ball"></div>
-                    </div>
-                    <!--End box juiceBottle-->
-                </div>
-                <!--End boxes B-->
-            </div>
-            <!--End contentB-->
-
-            <!--Start titleCategory C-->
-            <div class="titleCategory righteous">
-                <h1>Por fim, sua sobremesa</h1>
-            </div>
-            <!--End titleCategory C-->
-
-            <!--Start contentC-->
-                <div class="contentC">
-                <!--Start boxes C-->
-                <div class="boxes boxesC">
-                    <!--Start box pudding-->
-                    <div class="box pudding" onclick="selectDessert(this)">
-                        <div class="image imageC1">
-                            <!--Content in css-->
-                        </div>
-                        <div class="mealC">
-                            Pudim
-                        </div>
-                        <div class="description">
-                            <p>Apenas pudim</p>
-                        </div>
-                        <div class="priceC">
-                            R$ 7,90
-                        </div>
-                        <div class="ball"></div>
-                    </div>
-                    <!--End box pudding-->
-
-                    <!--Start box iceCream-->
-                    <div class="box iceCream" onclick="selectDessert(this)">
-                        <div class="image imageC2">
-                            <!--Content in css-->
-                        </div>
-                        <div class="mealC">
-                            Sorvete
-                        </div>
-                        <div class="description">
-                            <p>A cada 100g</p>
-                        </div>
-                        <div class="priceC">
-                            R$ 6,90
-                        </div>
-                        <div class="ball"></div>
-                    </div>
-                    <!--End box iceCream-->
-
-                    <!--Start box cake-->
-                    <div class="box cake" onclick="selectDessert(this)">
-                        <div class="image imageC3">
-                            <!--Content in css-->
-                        </div>
-                        <div class="mealC">
-                            Bolo
-                        </div>
-                        <div class="description">
-                            <p>Apenas uma fatia</p>
-                        </div>
-                        <div class="priceC">
-                            R$ 4,00
-                        </div>
-                        <div class="ball"></div>
-                    </div>
-                    <!--End box cake-->
-                </div>
-                <!--End boxes C-->
-                </div>
-            <!--Start contentC-->
-
-        </div> 
-        <!--End content-->
-
-        <!--Start finishing-->
-        <div class="finishing" >
-            <div>
-                <button onclick="directOrder()">
-                Selecione os 3 itens <br>
-                para fechar o pedido
-                </button>
-            </div>
-        </div>
-        <!--End finishing-->
-
+        <!--End container-->
     </div>
-    <!--End container-->
 
     <script src="script.js"></script>
 </body>
